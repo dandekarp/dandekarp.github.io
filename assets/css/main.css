@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #ab9257;
+		background-color: #935d8c;
 		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
@@ -120,7 +120,7 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background-color: #92935d;
+		background-color: #935d8c;
 		color: rgba(255, 255, 255, 0.65);
 	}
 
@@ -2364,7 +2364,7 @@ input, select, textarea {
 
 	.image {
 		border-radius: 8px;
-		border: 1;
+		border: 0;
 		display: inline-block;
 		position: relative;
 	}
@@ -2384,13 +2384,13 @@ input, select, textarea {
 
 		.image.left {
 			float: left;
-			margin: 0 3.5em 1em 0;
+			margin: 0 1.5em 1em 0;
 			top: 0.25em;
 		}
 
 		.image.right {
 			float: right;
-			margin: 0 0 1em 3.5em;
+			margin: 0 0 1em 1.5em;
 			top: 0.25em;
 		}
 
@@ -2413,77 +2413,6 @@ input, select, textarea {
 			.image.main img {
 				width: 100%;
 			}
-
-/* Projects */
-.container{
-	padding: 5px 10%;
-}
-
-#portfolio{
-    padding: -500px 0;
-
-}
-.work-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-.work{
-	border: 5px black;
-	border-color: #000000;
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-
-}
-.work img{
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-    transition: transform 0.5s;
-}
-.layer{
-    width: 100%;
-    height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6),#935d8c);
-    border-radius: 10px;
-    position: absolute;
-    left:0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    font-size: 14px;
-    transition: height 0.5s;
-}
-.layer h3{
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-.layer a{
-    margin-top: 20px;
-    color:#055cd6;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
-    background: #fff;
-    width: 60px;
-    height:60px;
-    border-radius:50%;
-    text-align: center;
-}
-.work:hover img{
-    transform: scale(1.1);
-}
-.work:hover .layer{
-    height: 100%;
-}
-
 
 /* List */
 
@@ -2976,10 +2905,10 @@ input, select, textarea {
 
 			.statistics li strong, .statistics li b {
 				display: block;
-				font-size: 1em;
+				font-size: 2em;
 				line-height: 1.1;
 				color: inherit !important;
-				font-weight: 500;
+				font-weight: 300;
 				letter-spacing: -0.025em;
 			}
 
@@ -3072,15 +3001,14 @@ input, select, textarea {
 			display: inline-block;
 			margin-left: 4em;
 			padding: 0.65em;
-			border-radius: 0%;
-			border: solid 0px;
+			border-radius: 100%;
+			border: solid 1px;
 		}
 
 			.spotlight .image img {
 				display: block;
 				border-radius: 100%;
 				width: 16em;
-				
 			}
 
 		@media screen and (max-width: 980px) {
@@ -3132,7 +3060,7 @@ input, select, textarea {
 			}
 
 				.spotlight .image img {
-					width: em;
+					width: 12em;
 				}
 
 		}
@@ -3855,22 +3783,3 @@ input, select, textarea {
 			}
 
 		}
-
-
-	.profile-picture {
-			width: 150px;
-			height: 150px;
-			border-radius: 50%;
-			border: 10px solid #8A2BE2; /* Purple color */
-			padding: 5px; /* Adjust the padding if needed */
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		  }
-		  
-	.profile-picture img {
-			width: 100%;
-			height: 100%;
-			border-radius: 50%;
-		  }
-			  
