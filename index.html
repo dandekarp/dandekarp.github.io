@@ -100,10 +100,11 @@
 					<nav id="nav">
 						<ul>
 							<li><a href="#intro" class="active">About Me</a></li>
-							<li><a href="#projects">Projects</a></li>
-							<li><a href="#experience">Experience</a></li>
+							<!-- <li><a href="#projects">Projects</a></li> -->
 							<li><a href="#skills">Skills</a></li>
 							<li><a href="#education">Education</a></li>
+							<li><a href="#experience">Experience</a></li>
+							
 						</ul>
 					</nav>
 
@@ -123,13 +124,18 @@
 										<p>
 											Data Engineer with a passion for building data-driven solutions that empower businesses to make smarter decisions and unlock new opportunities.
 											<br><br>
-											</p>
+											With a Master’s in Information Systems from Northeastern University, I’ve honed my expertise in SQL, AWS, data modeling, and cloud-native architectures.
+											I’m driven by a curiosity to solve complex problems and create scalable, innovative solutions that help organizations turn raw data into actionable insights. I enjoy collaborating with cross-functional teams to deliver impactful results.
+											<br><br>
+											Outside of work, I’m passionate about staying ahead of emerging trends in cloud and data technologies, as well as mentoring others in the field. 	
+										</p>
 									</div>
 									<span class="image"><img src="images/profile-pic.png" alt="Profile Photo" /></span>
 
 								</div>
 							</section>
 
+							
 						<!-- Buttons to filter projects -->
 
 						<!-- Skills -->
@@ -143,140 +149,37 @@
 								    <h4><strong>Programming Languages</strong></h4>
 								    <p>SQL, Python, R, Java</p>
 								</li>
-								<!-- <li> -->
-								    <!-- <span class="icon solid fa-chart-bar"></span> -->
-								    <!-- <h4><strong>ML Libraries</strong></h4> -->
-								    <!-- <p>NumPy, Pandas, Scikit-learn, Seaborn, Matplotlib, Keras, PyTorch, TensorFlow, Spark, SpaCy</p> -->
-								<!-- </li> -->
-								<!-- <li> -->
-								    <!-- <span class="icon solid fa-database"></span> -->
-								    <!-- <h4><strong>ML Algorithms</strong></h4> -->
-								    <!-- <p>Logistic and Linear Regression, Random Forest, Support Vector Machine, CNN, RNN, LSTM, NLP</p> -->
-								<!-- </li> -->
 								<li>
 								    <span class="icon solid fa-exchange-alt"></span>
 								    <h4><strong>Data Management</strong></h4>
-								    <p>SQL, Google Big Query, MS Azure Data Studio, AWS Redshift, Snowflake, MS Excel</p>
+								    <p>SQL, Snowflake, Google Big Query, MS Azure Data Studio, AWS Redshift, MS Excel</p>
+								</li>
+								<li>
+								    <span class="icon solid fa-database"></span>
+								    <h4><strong>E-T-L</strong></h4>
+								    <p>Data Build Tool, Alteryx, Talend, KNIME, SAP Data Services, Airflow</p>
 								</li>
 								<li>
 								    <span class="icon solid fa-cloud"></span>
 								    <h4><strong>Data Visualizations</strong></h4>
-								    <p>Tableau, Power BI, Looker</p>
+								    <p>Tableau, Power BI, Looker, AWS QuickSight</p>
 								</li>
 								<li>
 								    <span class="icon solid fa-key"></span>
 								    <h4><strong>Cloud Technologies</strong></h4>
 								    <p>Amazon Web Services, Google Cloud Platform, Microsoft Azure</p>
 								</li>
+								<li>
+								    <span class="icon solid fa-certificate"></span>
+								    <h4><strong>Certifications</strong></h4>
+								    <p>AWS Cloud Practitioner, dbt Fundamentals, Databricks Lakehouse Fundamentals, Snowflake SnowPro Core*</p>
+								</li>
+								
 
 							</ul>
 
 						</section>
 
-
-<!-- Projects -->
-<section id="projects" class="main special">
-    <div class="spotlight">
-        <div class="content">
-            <header class="major">
-                <h2>Check out my Projects </h2>
-            </header>
-
-			<div id="filter-buttons">
-				<button class="filter-btn" onclick="filterProjects('all')">All</button>
-				<button class="filter-btn" onclick="filterProjects('data-analysis')">Data Analyis</button>
-				<button class="filter-btn" onclick="filterProjects('data-engineering')">Data Engineering</button>
-				<button class="filter-btn" onclick="filterProjects('ml')">ML</button>
-			</div>
-        </div>
-    </div>
-    <div id ="portfolio">
-        <div class="container"> 
-            <div class="work-list">
-                <div class="work" data-category="ml">
-                    <h3><strong>MLFLOW-DVC-AWS-Kidney Disease Classification</strong></h3>    
-                    <p  style="font-size: 18px;">End to end Deep learning project on Kidney Disease Classification with MLFLOW, DVC, and AWS.</p>
-                    <img src="images/kidney-MLflow-image.png" alt="MLFLOW-DVC-AWS project"  width="500px" height="250px">
-                    <div class="layer">
-                        <a href="https://github.com/CHAITANYAI0/Kideny-Disease-Classification-Deep-Learning-Project-DS" target="_blank"><i class="icon brands fa-github"></i></a>
-                    </div>
-                </div>
-
-				<div class="work"  data-category="ml">
-					<h3><strong>E-Commerce Product Recommendation System</strong></h3>	
-					<p  style="font-size: 18px;">Developed a hybrid recommendation system using collaborative and content-based filtering on Walmart's dataset, optimizing user personalization and boosting recommendation accuracy.
-					</p>
-					<img src="images\ecomm_rec.jpg" alt="Pipeline Diagram"  width="500px" height="250px">
-					<div class="layer">
-						<a href="https://github.com/CHAITANYAI0/E-Commerece-Recommendation-System-Machine-Learning" target="_blank"><i class="icon brands fa-github"></i></a>
-					</div>
-				</div>
-
-				<div class="work" data-category="ml">
-					<h3><strong>Image Caption Generation: CNN + LSTM vs ResNet + GRU</strong></h3>	
-					<p  style="font-size: 18px;">This project compares two approaches for image caption generation using deep learning models: CNN + LSTM and ResNet + GRU. The models were trained and evaluated on the Flicker 8K dataset to generate captions for images.
-					</p>
-					<img src="images\Image_Captioning.png" alt="Image Caption Generation: CNN + LSTM vs ResNet + GRU" width="500px" height="250px">
-					<div class="layer">
-						<a href="https://github.com/CHAITANYAI0/Image-Captioning-with-CNN-LSTM-and-ResNet-GRU-Flickr8k" target="_blank"><i class="icon brands fa-github"></i></a>
-					</div>
-				</div>
-
-				<div class="work" data-category="ml">
-					<h3><strong>Content Based Movie Recommendation System with Heroku Deployment</strong></h3>	
-					<p  style="font-size: 18px;">The Movie Recommender System is a web application built with Python and Streamlit that suggests movies based on user preferences using collaborative and content-based filtering techniques. It's ideal for those looking to build and deploy recommendation systems with a user-friendly interface.
-					</p>
-					<img src="images/Movie_Rec_sys.jpg" alt="Content Based Movie Recommendation System with Heroku Deployment" width="500px" height="250px">
-					<div class="layer">
-						<a href="https://github.com/CHAITANYAI0/Content-Based-Movie-Recommendation-System-with-Heroku-Deployment" target="_blank"><i class="icon brands fa-github"></i></a>
-					</div>
-				</div>
-
-			
-
-                <div class="work" data-category="data-engineering">
-                    <h3><strong>Uber ETL GCP-MAGE-SQL-Looker Data Engineering</strong></h3>    
-                    <p  style="font-size: 18px;">Data analytics on Uber data using various tools like GCP Storage, Python, Compute Instance, Mage Data Pipeline Tool, BigQuery, and Looker Studio.</p>
-                    <img src="images/architecture.jpg" alt="GCP-MAGE-SQL-Looker project" width="500px" height="250px">
-                    <div class="layer">
-                        <a href="https://github.com/CHAITANYAI0/Uber-ETL-Data-Engineering-Project" target="_blank"><i class="icon brands fa-github"></i></a>
-                    </div>
-                </div>
-
-				<div class="work"  data-category="data-engineering">
-					<h3><strong>App Store Relational Database Management System SQL</strong></h3>	
-					<p  style="font-size: 18px;">The App Store Management System streamlines app management across multiple platforms, allowing users to install, update, and review apps by genre. It also enables companies to launch apps and collect user feedback efficiently.
-					</p>
-					<img src="images\ER.png" alt="ERD Diagram" width="500px" height="250px">
-					<div class="layer">
-						<a href="https://github.com/CHAITANYAI0/App-Store-Relational-Database-Management-System-SQL" target="_blank"><i class="icon brands fa-github"></i></a>
-					</div>
-				</div>
-
-				<div class="work"  data-category="data-engineering">
-					<h3><strong>Streaming Data Pipeline With Spark Kafka Cassandra</strong></h3>	
-					<p  style="font-size: 18px;"> This project demonstrates the development of a robust and scalable streaming data pipeline using cutting-edge technologies like Apache Kafka, Apache Spark, and Apache Cassandra, orchestrated with Apache Airflow and deployed using Docker.
-					</p>
-					<img src="images\kafka_image.png" alt="Pipeline Diagram" width="500px" height="250px">
-					<div class="layer">
-						<a href="https://github.com/CHAITANYAI0/streaming-data-pipeline-with-spark-kafka-cassandra" target="_blank"><i class="icon brands fa-github"></i></a>
-					</div>
-				</div>
-
-                <div class="work" data-category="data-analysis">
-                    <h3><strong>Retail Sales Analysis Dashboard Tableau</strong></h3>    
-                    <p  style="font-size: 18px;">Interactive Sales and Customer Dashboards built with Tableau, offering insights into sales metrics, customer trends, and product performance.</p>
-                    <img src="images/Sales Dashboard.png" alt="Retail Sales Analysis Dashboard Tableau" width="500px" height="250px">
-                    <div class="layer">
-                        <a href="https://github.com/CHAITANYAI0/Retail-Sales-Analysis-Dashboard-TABLEAU" target="_blank"><i class="icon brands fa-github"></i></a>
-                    </div>
-                </div>
-
-                <!-- Add other projects similarly with appropriate data-category attributes -->
-            </div>
-        </div>
-    </div>     
-</section>
 <br>
 <br>
 <!-- Script to filter projects -->
@@ -293,73 +196,70 @@ function filterProjects(category) {
         }
     });
 }
-</script>
-
-					
-							
+</script>						
 							<br>
 							<br>
-						<!-- Experience -->
-						<section id="experience" class="main special">
+						
+						  <!-- Experience -->
+						  <section id="experience" class="main special">
 							<header class="major">
 								<h2>Where I’ve Worked ?</h2>
 							</header>
-							<ul class="statistics">
+							<ul class="statistics" style="font-size: 18px;">
 								<li class="style1">
-									<strong><i>Data Scientist</i></strong>
+									<strong><i>Data Analyst</i></strong>
 									<hr>
-									<img src="images\linus.png" alt="Linus Health Logo" style="width:100px;height:50px;">
-									<br>Linus Health
+									<img src="images/crowddoing_logo.jpg" alt="CrowdDoing Logo" style="width:100px;height:50px;">
+									<br>Crowd Doing
 									<br><br> 
 									Boston, MA
 									<br>
-									June '23 – Dec '23
+									Jan '24
 								</li>
 								<li class="style2">
-									<strong><i>Data Scientist</i></strong>
+									<strong><i>Data Engineer</i></strong>
 									<hr>
-									<img src="images\accenture.png" alt="Accenture Logo" style="width:100px;height:50px;">
-									<br>Accenture
+									<img src="images/McK.png" alt="McKinsey Logo" style="width:100px;height:50px;">
+									<br>McKinsey & Company
+									<br><br>
+									Boston, MA
+									<br>
+									Jan '23 – Aug '23
+								</li>
+								<li class="style3">
+									<strong><i>Data Engineer</i></strong>
+									<hr>
+									<img src="images/NEU.png" alt="NEU Logo" style="width:100px;height:50px;">
+									<br>Northeastern University
+									<br><br>
+									Boston, MA
+									<br>
+									May '22 – Dec '23
+								</li>
+								<li class="style4">
+									<strong><i>Data Engineer</i></strong>
+									<hr>
+									<img src="images/jio.png" alt="JPL Logo" style="width:100px;height:50px;">
+									<br>JPL - Retail Analytics
 									<br><br>
 									Mumbai, India
 									<br>
-									Aug '21 – Aug '22
-								</li>
-								<li class="style3">
-									<strong><i>Data Scientist</i></strong>
-									<hr>
-									<img src="images\ZS_logo.png" alt="ZA Associates Logo" style="width:100px;height:50px;">
-									<br>ZS
-									<br><br>
-									Pune, India
-									<br>
-									Jun '20 – Aug '21
-								</li>
-								<li class="style4">
-									<strong><i>Data Scientist</i></strong>
-									<hr>
-									<img src="images\virtusa.png" alt="Virtusa Logo" style="width:100px;height:50px;">
-									<br>Virtusa
-									<br><br>
-									Chennai, India
-									<br>
-									May '19 – Jun '22
+									Aug '18 – Aug '21
 								</li>
 							</ul>
 						</section>
-						
 
 						<!-- Education -->
 						<section id="education" class="main special">
 							<header class="major">
 							  <h2>What I have Studied?</h2>
 							</header>
-							<ul class="statistics">
+							<ul class="statistics" style="font-size: 16px;">
 							  <li class="style2">
-								<strong><i>Master of Science in Information Systems</i></strong>
+								<strong><i>Master of Science <br> Information Systems</i></strong>
 								<hr>
 								<h3>Northeastern University</h3>
-								<img src="images\NEU.png" alt="NEU Logo" style="width:200px;height:100px;">
+								<img src="images/NEU.png" alt="NEU_logo" style="width:200px;height:100px;">
 								<br>
 								Boston, MA
 								<br>
@@ -368,10 +268,11 @@ function filterProjects(category) {
 								<h2>Relevant Courses:</h2> Data Science Methods and Tools, Advanced Database Management Systems, Database Management, and Database Design.
 							  </li>
 							  <li class="style4">
-								<strong><i>Bachelor of Engineering in Information Technology</i></strong>
+								<strong><i>Bachelor of Engineering <br> Information Technology</i></strong>
 								<hr>
-								<h3>University of Mumbai</h3>
-								<img src="images\VIT.png" alt="VIT Logo" style="width:200px;height:100px;">
+								<h3>University of Mumbai - PCE</h3>
+								<img src="images/MU.jpg" alt="MU_logo" style="width:100px;height:100px;">
+								<img src="images/PCE.png" alt="Neu_logo" style="width:100px;height:100px;"> 
 								<br>
 								Mumbai, India
 								<br>
@@ -381,7 +282,7 @@ function filterProjects(category) {
 								<!-- <img src="images\VIT_Graduation_Photo.jpg" alt="Graduation Photo" style="width: 300px; height: auto; margin-top: 10px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); border: 2px solid #ccc;"> -->
 							  </li>
 							</ul>
-						  </section>
+						  </section>					
 						  
 						  
 
