@@ -95,8 +95,8 @@
 							<li><a href="#intro" class="active">About Me</a></li>
 							<!-- <li><a href="#projects">Projects</a></li> -->
 							<li><a href="#skills">Skills</a></li>
-							<li><a href="#education">Education</a></li>
 							<li><a href="#experience">Experience</a></li>
+							<li><a href="#education">Education</a></li>
 							
 						</ul>
 					</nav>
@@ -172,6 +172,52 @@
 							</ul>
 
 						</section>
+
+<!-- Projects -->
+<section id="projects" class="main special">
+    <div class="spotlight">
+        <div class="content">
+            <header class="major">
+                <h2>Check out my Projects </h2>
+            </header>
+
+			<div id="filter-buttons">
+				<button class="filter-btn" onclick="filterProjects('all')">All</button>
+				<button class="filter-btn" onclick="filterProjects('data-analysis')">Data Analyis</button>
+				<button class="filter-btn" onclick="filterProjects('de')">Data Engineering</button>
+				<!-- <button class="filter-btn" onclick="filterProjects('ml')">ML</button> -->
+			</div>
+        </div>
+    </div>
+    <div id ="portfolio">
+        <div class="container"> 
+            <div class="work-list">
+                <div class="work" data-category="de">
+                    <h3><strong>Realtime E-T-L Data pipeline</strong></h3>    
+                    <p  style="font-size: 18px;">Real time data streaming using Apache Nifi, AWS, Snowpipe, Stream and Task</p>
+                    <img src="./images/realtime-etl-nifi-sf.png" alt="Realtime ETL project"  width="500px" height="250px">
+                    <div class="layer">
+                        <a href="https://github.com/dandekarp/Realtime-AWS-Nifi-Snowflake" target="_blank"><i class="icon brands fa-github"></i></a>
+                    </div>
+                </div>
+				
+				<div class="work" data-category="de">
+                    <h3><strong>SpotifyFlow: Automated Analytics Pipeline</strong></h3>    
+                    <p  style="font-size: 18px;">A serverless ETL pipeline that extracts Spotify music data via API, processes it with AWS Lambda functions, and delivers structured insights to PowerBI through S3 and Snowflake.</p>
+                    <img src="./images/SpotifyFlow_Automated_Analytics_Pipeline.png" alt="GCP-MAGE-SQL-Looker project" width="500px" height="250px">
+                    <div class="layer">
+                        <a href="https://github.com/dandekarp/Spotify-AWS-ETL-Pipeline" target="_blank"><i class="icon brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Add other projects similarly with appropriate data-category attributes -->
+            </div>
+        </div>
+    </div>     
+</section>
+<br>
+<br>
+
 
 <!-- Script to filter projects -->
 <script>
